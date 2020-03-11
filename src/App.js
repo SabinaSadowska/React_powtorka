@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import Title from './title';
 import Post from './post';
-import Comments from './comments'
+import Comments from './comments';
+import Form from './form'
 
 const title = "Moj blog";
 const postTitle = 'Lorem Ipsum';
 const comment='Comments:'
+
 
 
 
@@ -38,6 +40,7 @@ class App extends Component {
     <Title title={title} />
     <Post postTitle={postTitle} post={this.state.post} />
     <Comments comment={comment}/>
+    <Form />
   </div>
   }
 }
